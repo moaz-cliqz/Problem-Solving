@@ -1,0 +1,48 @@
+Problem: https://uva.onlinejudge.org/external/101/10168.pdf
+Solution: https://ideone.com/SSEZev
+using Binary search: https://ideone.com/pOPwyc
+
+Problem:
+you want to represent any number as a summation of 4 primes.
+if you can't do that print "Impossible." else print the four primes.
+
+
+Solution:
+You will get all prime numbers in range 0 - 10000000 using Seive method //O(n log(log n))
+You can take a look to Prime video by Eng.Mostafa Saad about primes.
+https://www.youtube.com/watch?v=VZBfW08ECgA
+
+Idea:
+- you can represent any number before 8 with 4 primes, because the first prime is 2
+and the summation of 4*2 = 8.
+
+- we will try to simplify our problem to sub problems,
+you can watch Thinking Techniques - Problem Simplification by Eng.Mostafa Saad
+https://www.youtube.com/watch?v=x1rCxxKfFbM
+
+1- we will assume that the any number can be represent by it's previous prime + 6 "2 2 2"
+e.g: 25 => 19 2 2 2
+but the problem is that we can't verify that we will find a prime if we subtract any number with 6.
+
+so what we will repeat the first step again (sub problem) but with small modification
+we want to find a number represented as 3 prime and we will assume that the number can represented by it's previous prime + 4 "2 2"
+e.g: 6 => 2 2 2
+but the problem is that we can't verify that we will find a prime if we subtract any number with 4.
+
+so what we will repeat the first step again (sub problem) but with small modification
+we want to find a number represented as 2 prime and we will assume that the number can represented by it's previous prime + 2 "2"
+e.g: 4 => 2 2
+
+if the remain number is not prime so it's "Impossible.", but you will always find it prime :)
+
+
+3- to get the previous prime you can set the previous primes on the prime arrays
+OR you can filter the primes and 
+use lower_bound of Binary Search
+you can watch Binary Search video by Eng.Mosatafa Saad https://www.youtube.com/watch?v=2G7RzlxTNPo
+
+
+
+
+
+

@@ -1,0 +1,3 @@
+minmum spanning tree: subset from the tree connected to all nodes with lost cost edges
+
+

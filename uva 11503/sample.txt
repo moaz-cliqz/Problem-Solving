@@ -1,0 +1,25 @@
+sample1:
+
+Fred Barney
+Fred <--> Barney  2
+
+Barney Betty
+Fred <--> Barney <--> Betty 3
+
+Betty Wilma
+Fred <--> Barney <--> Betty <--> Wilma 4
+ 
+
+
+sample2:
+
+ahmed mohamed
+ahmed <--> mohamed  2
+
+moaz mostafa
+Moaz  <--> Mostafa  2
+
+ahmed mostafa
+mohamed <--> ahmed <--> Mostafa <--> Moaz  4
+ 
+
