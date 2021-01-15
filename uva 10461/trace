@@ -1,0 +1,34 @@
+A:4, B:3, C:2, D:1
+
+2 1
+2 4
+3 1
+3 4
+
+beforeDependencies:
+1: 
+2: 1, 4
+3: 1, 4
+4:
+
+afterDependencies:
+1: 2, 3
+2:
+3:
+4: 2, 3
+
+min  of A: 0
+max  of A: Total:10 - A:4 - B:3 - C:2 = 1
+diff of A: 1
+
+min of  B: A:4 + D:1 = 5
+max of  B: Toal:10 - B:3 = 7
+diff of B: 2
+
+min of  C: A:4 + D:1 = 5
+max of  C: Toal:10 - C:2 = 8
+diff of C: 3
+
+min  of D: 0
+max  of D: Total:10 - D:1 - B:3 - C:2 = 4
+diff of D: 4
